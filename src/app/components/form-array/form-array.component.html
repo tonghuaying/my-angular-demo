@@ -1,0 +1,17 @@
+<p>form-array works!</p>
+<form [formGroup]="contactForm" (submit)="onSubmit()">
+  <div formArrayName="contacts">
+    <div *ngFor="let contact of contacts.controls; 
+          let i = index;"
+          [formGroupName]="i" >
+      <input type="text" formControlName="name" />
+      <input type="text" formControlName="phone" />
+      <input type="text" formControlName="address" />
+      <button (click)="removeContact(i)">删除</button>
+    </div>
+  </div>
+  <button (click)="addContact()">添加</button>
+  <div>
+    <button>提交</button>
+  </div>
+</form>

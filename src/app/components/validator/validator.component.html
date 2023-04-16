@@ -1,0 +1,6 @@
+<p>validator works!</p>
+<form [formGroup]="userForm" (submit)="onSubmit()">
+  
+  <input type="text" formControlName="name" />
+  <button [disabled]="userForm.invalid">submit</button>
+</form>

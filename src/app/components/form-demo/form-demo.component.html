@@ -1,0 +1,6 @@
+<p>form-demo works!</p>
+<form [formGroup]="userForm" (submit)="onSubmit()">
+  <input type="text" formControlName="username" />
+  <input type="text" formControlName="age" />
+  <button>submit</button>
+</form>
