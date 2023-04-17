@@ -8,6 +8,7 @@ import { DialogComponent } from './components/dialog/dialog.component';
 import { FormDemoComponent } from './components/form-demo/form-demo.component';
 import { FormArrayComponent } from './components/form-array/form-array.component';
 import { ValidatorComponent } from './components/validator/validator.component';
+import { FormBuilderComponent } from './components/form-builder/form-builder.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ValidatorComponent } from './components/validator/validator.component';
     DialogComponent,
     FormDemoComponent,
     FormArrayComponent,
-    ValidatorComponent
+    ValidatorComponent,
+    FormBuilderComponent
   ],
   imports: [
     BrowserModule,

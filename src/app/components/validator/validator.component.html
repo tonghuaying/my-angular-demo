@@ -2,5 +2,9 @@
 <form [formGroup]="userForm" (submit)="onSubmit()">
   
   <input type="text" formControlName="name" />
+  <div *ngIf="name?.touched && name?.invalid && name?.errors">
+    <!-- {{ name?.errors | json }}
+    <div *ngIf="name?.errors"></div> -->
+  </div>
   <button [disabled]="userForm.invalid">submit</button>
 </form>

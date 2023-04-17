@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { MyValidators } from './myValidators';
 
 @Component({
   selector: 'app-validator',
@@ -10,7 +11,8 @@ export class ValidatorComponent {
   userForm: FormGroup = new FormGroup({
     name: new FormControl('', [
       Validators.required,
-      Validators.minLength(2)
+      Validators.minLength(2),
+      // MyValidators.cannotContainSpace
     ])
   })
 

@@ -1,0 +1,9 @@
+<p>form-builder works!</p>
+<form [formGroup]="contactForm" (submit)="onSubmit()">
+  <div formGroupName="fullName">
+    <input type="text" formControlName="firstName" />
+    <input type="text" formControlName="lastName" />
+  </div>
+  <input type="tel" formControlName="phone" />
+  <button>submit</button>
+</form>
