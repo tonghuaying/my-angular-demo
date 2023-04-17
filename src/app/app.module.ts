@@ -10,6 +10,7 @@ import { FormArrayComponent } from './components/form-array/form-array.component
 import { ValidatorComponent } from './components/validator/validator.component';
 import { FormBuilderComponent } from './components/form-builder/form-builder.component';
 import { CheckboxComponent } from './components/checkbox/checkbox.component';
+import { RadioComponent } from './components/radio/radio.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { CheckboxComponent } from './components/checkbox/checkbox.component';
     FormArrayComponent,
     ValidatorComponent,
     FormBuilderComponent,
-    CheckboxComponent
+    CheckboxComponent,
+    RadioComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,6 @@
+<p>radio works!</p>
+<form [formGroup]="form" (submit)="onSubmit()">
+  <input type="radio" value="male" formControlName="gender" />male
+  <input type="radio" value="female" formControlName="gender" />female
+  <button>提交</button>
+</form>
