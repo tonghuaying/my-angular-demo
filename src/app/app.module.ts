@@ -9,6 +9,7 @@ import { FormDemoComponent } from './components/form-demo/form-demo.component';
 import { FormArrayComponent } from './components/form-array/form-array.component';
 import { ValidatorComponent } from './components/validator/validator.component';
 import { FormBuilderComponent } from './components/form-builder/form-builder.component';
+import { CheckboxComponent } from './components/checkbox/checkbox.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FormBuilderComponent } from './components/form-builder/form-builder.com
     FormDemoComponent,
     FormArrayComponent,
     ValidatorComponent,
-    FormBuilderComponent
+    FormBuilderComponent,
+    CheckboxComponent
   ],
   imports: [
     BrowserModule,
