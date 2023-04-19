@@ -21,6 +21,9 @@
 
 <div class="main" >
   <div class="header">
+    <form [formGroup]="form" (submit)="onConfirm()">
+      <input type="text" formControlName="username" />
+    </form>
     <router-outlet></router-outlet>
   </div>
   <div class="content">

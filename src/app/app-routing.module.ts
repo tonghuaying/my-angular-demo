@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AuthGuardGuard } from './guards/auth-guard.guard';
+import { UnsaveGuard } from './guards/unsave.guard';
 import { AboutComponent } from './pages/about/about.component';
 import { CompanyComponent } from './pages/company/company.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -11,7 +12,8 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
 const routes: Routes = [
   {
     path: 'home',
-    component: HomeComponent
+    component: HomeComponent,
+    canDeactivate: [ UnsaveGuard ]
   },
   {
     path: 'about/:name',
