@@ -12,6 +12,14 @@ import { FormBuilderComponent } from './components/form-builder/form-builder.com
 import { CheckboxComponent } from './components/checkbox/checkbox.component';
 import { RadioComponent } from './components/radio/radio.component';
 import { FormMethodComponent } from './components/form-method/form-method.component';
+import { HomeComponent } from './pages/home/home.component';
+import { AboutComponent } from './pages/about/about.component';
+import { LayoutComponent } from './pages/layout/layout.component';
+import { NavigationComponent } from './pages/navigation/navigation.component';
+import { RouterModule } from '@angular/router';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
+
+
 
 @NgModule({
   declarations: [
@@ -23,7 +31,12 @@ import { FormMethodComponent } from './components/form-method/form-method.compon
     FormBuilderComponent,
     CheckboxComponent,
     RadioComponent,
-    FormMethodComponent
+    FormMethodComponent,
+    HomeComponent,
+    AboutComponent,
+    LayoutComponent,
+    NavigationComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
