@@ -18,6 +18,9 @@ import { LayoutComponent } from './pages/layout/layout.component';
 import { NavigationComponent } from './pages/navigation/navigation.component';
 import { RouterModule } from '@angular/router';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { NewsComponent } from './pages/news/news.component';
+import { CompanyComponent } from './pages/company/company.component';
+import { InndustryComponent } from './pages/inndustry/inndustry.component';
 
 
 
@@ -36,7 +39,10 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
     AboutComponent,
     LayoutComponent,
     NavigationComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    NewsComponent,
+    CompanyComponent,
+    InndustryComponent
   ],
   imports: [
     BrowserModule,

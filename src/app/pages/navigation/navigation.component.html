@@ -1,4 +1,6 @@
 <div class="navigation">
   <a routerLink="/home">home</a>
-  <a routerLink="/about">about</a>
+  <a [routerLink]="['/about', 'lisi']" >about</a>
+  <a routerLink="/news">news</a>
+  <!-- <a routerLink="/about" [queryParams]="{ name: 'zhangsan'}">about</a> -->
 </div>
