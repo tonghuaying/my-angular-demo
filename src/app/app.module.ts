@@ -11,6 +11,7 @@ import { ValidatorComponent } from './components/validator/validator.component';
 import { FormBuilderComponent } from './components/form-builder/form-builder.component';
 import { CheckboxComponent } from './components/checkbox/checkbox.component';
 import { RadioComponent } from './components/radio/radio.component';
+import { FormMethodComponent } from './components/form-method/form-method.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { RadioComponent } from './components/radio/radio.component';
     ValidatorComponent,
     FormBuilderComponent,
     CheckboxComponent,
-    RadioComponent
+    RadioComponent,
+    FormMethodComponent
   ],
   imports: [
     BrowserModule,

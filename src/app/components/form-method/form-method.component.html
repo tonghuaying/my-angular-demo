@@ -1,0 +1,9 @@
+<p>form-method works!</p>
+<form [formGroup]="form" (submit)="onSubmit()">
+  <input type="text" formControlName="firstName" />
+  <input type="text" formControlName="lastName" />
+  <button (click)="onPatchValue()">patchValue</button>
+  <button (click)="onSetValue()">setValue</button>
+  <button (click)="onReset()">reset</button>
+  <button>submit</button>
+</form>
